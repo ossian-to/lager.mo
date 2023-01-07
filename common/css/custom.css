@@ -249,6 +249,23 @@ ul.sub-nav li a:hover{
   width: auto;
 }
 
+/* card-3 有五欄 */
+.table.card-3 tr th:nth-child(1){
+  width: 15%;
+}
+.table.card-3 tr th:nth-child(2){
+  width: auto;
+}
+.table.card-3 tr th:nth-child(3){
+  width: 15%;
+}
+.table.card-3 tr th:nth-child(4){
+  width: 15%;
+}
+.table.card-3 tr th:nth-child(5){
+  width: 15%;
+}
+
 .table tr:hover td{
   color: white;
   background-color: #008bd0;
