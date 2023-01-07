@@ -95,4 +95,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,windows,git
+# 製作檔
+*.psd
+*.ai
+*.sketch
+*.fla
+*.fig
+*.figma
