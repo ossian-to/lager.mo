@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+.intro-container {
+  width: 1920px;
+  height: 991px;
+  background: url("../../index/intro/images/intro-bg.jpg") no-repeat center;
+}
+
+.intro-menu {
+  width: 471px;
+  height: 991px;
+  background: url("../../index/intro/images/intro-menu.png") no-repeat center;
+}
+
+.intro-logo {
+  position: absolute;
+  display: block;
+  width: 199px;
+  height: 140px;
+  z-index: 5;
+  left: 10px;
+  top: 140px;
+  background: url("../../index/intro/images/logo.png") no-repeat center;
+}
+
+.intro-menu-btn {
+  top: 290px;
+  left: 30px;
+  font-family: "Noto Sans TC" !important;
+  font-weight: bold;
+  color: #5c331f;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  width: 153px;
+  height: 50px;
+  background: url("../../index/intro/images/menu-btn.png") no-repeat bottom center;
+}
+.intro-menu-btn > span {
+  display: block;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.intro-menu-btn:hover {
+  background-position: top center;
+}
+.intro-menu-btn:hover > span {
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.intro-menu-btn1 {
+  margin-bottom: 8px;
+}
+
+.intro-menu-title {
+  top: 308px;
+  left: 29px;
+  width: 153px;
+  height: 20px;
+  background: url("../../index/intro/images/menu-title.png") no-repeat center;
+}
+
+.intro-info-pic {
+  display: block;
+  width: 150px;
+  height: 90px;
+  background: #CCC;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -moz-box-shadow: 0 3px #5d331f;
+  -webkit-box-shadow: 0 3px #5d331f;
+  box-shadow: 0 3px #5d331f;
+}
+.intro-info-pic:hover {
+  -moz-box-shadow: 0 5px #5d331f;
+  -webkit-box-shadow: 0 5px #5d331f;
+  box-shadow: 0 5px #5d331f;
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.intro-info-boxes {
+  top: 325px;
+  left: 30px;
+}
+
+.intro-info-box {
+  display: block;
+  width: 150px;
+  height: 110px;
+  margin-bottom: 15px;
+}
+.intro-info-box:hover .intro-info-title {
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+  color: #fff;
+}
+
+.intro-info-title {
+  font-family: "Noto Sans TC" !important;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5c331f;
+  margin-top: 5px;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}

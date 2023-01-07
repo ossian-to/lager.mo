@@ -1,0 +1,398 @@
+/*
+ * ---------------------------------------------------------------
+ * 由於天外官網未取得相關製作檔，只能在既有的 HTML&CSS 版型中進行調整
+ * 為避免與原本的 CSS 交互汙染，所以新增這份檔案，用來與前人的檔案區隔。
+ * ---------------------------------------------------------------
+ * 最後更新：2023/01/04 - by ossian
+ * ---------------------------------------------------------------
+*/
+
+/*
+ * ---------------------------------------------------------------
+ * 將天外官網的主選單改成三層式的架構
+ * ---------------------------------------------------------------
+*/
+
+
+.left-box,
+#menu-btn,
+#menu-btn li {
+  position: static;
+}
+
+/* 第二層選單 */
+#menu-btn li:hover > ul.sub-menu{
+  display: block;
+}
+#menu-btn li > ul.sub-menu{
+  display: none;
+  position: absolute;
+  /* top: 100px; */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #111;
+  z-index: 10;
+}
+#menu-btn li > ul.sub-menu li{
+  position: relative;
+  display: inline-block;
+  width: unset;
+  height: unset;
+}
+#menu-btn li > ul.sub-menu li a {
+  /* display: block; */
+  padding: 1em 2em;
+  /* align-items: unset;
+  justify-content: unset;
+  width: unset;
+  height: unset; */
+  color: rgba(255,255,255,0.5);
+  transition: color 0.3s;
+}
+#menu-btn li > ul.sub-menu li a:hover{
+  color: black;
+  background-color: white;
+}
+#menu-btn li > ul.sub-menu li a::before {
+  content: none;
+}
+.news-detail-content.p-3{
+  padding: 3em;
+}
+
+
+/* 第三層選單 */
+#menu-btn li > ul.sub-menu li:hover > ul.sub-menu-childs{
+  display: block;
+}
+#menu-btn li > ul.sub-menu li > ul.sub-menu-childs {
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  width: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #111;
+}
+#menu-btn li > ul.sub-menu li > ul.sub-menu-childs li{
+  display: block;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  /* width: unset;
+  height: unset; */
+}
+#menu-btn li > ul.sub-menu li > ul.sub-menu-childs li a{
+  display: block;
+  padding: 1em;
+  align-items: unset;
+  justify-content: unset;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  color: rgba(255,255,255,0.5);
+  transition: color 0.3s, background-color 0.3s;
+}
+#menu-btn li > ul.sub-menu li > ul.sub-menu-childs li a:hover{
+  color: black;
+  background-color: white;
+}
+
+/* 天外寶典的大圖 */
+.book-title-bg {
+  background: url("../../book/skill/images/title-bg.jpg") no-repeat center;
+}
+
+
+/*
+ * ---------------------------------------------------------------
+ * 增加麵包屑選單
+ * ---------------------------------------------------------------
+*/
+
+ul.nav-path{
+  margin: 2em auto 0;
+  padding: 0;
+  list-style: none;
+  width:1200px;
+}
+ul.nav-path > li{
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+ul.nav-path > li:hover ul.sub-nav{
+  display: block;
+}
+ul.nav-path > li::after{
+  content:'›';
+  display: inline-block;
+  margin-left: 0.25em;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  font-size: 1.25em;
+  color: rgba(255,255,255,0.5);
+}
+ul.nav-path > li:nth-last-child(1):after{
+  content: none;
+}
+ul.nav-path > li > a{
+  color: white;
+  transition: color 0.3s;
+}
+ul.nav-path > li > a:hover{
+  color: #8addff;
+}
+/* 麵包屑選單的第二層 */
+ul.sub-nav{
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 4em;
+  text-align: center;
+  list-style: none;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+ul.sub-nav li{
+  display: block;
+  color: #ccc;
+  padding: 0.5em 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+ul.sub-nav li a{
+  display: block;
+  /* padding: 0.5em 0; */
+  color: black;
+  transition: color 0.3s, padding-left 0.3s;
+}
+ul.sub-nav li a:hover{
+  padding-left: 0.25em;
+  color: #008bd0;
+}
+
+
+/*
+ * ---------------------------------------------------------------
+ * 天外寶典的表格
+ * ---------------------------------------------------------------
+*/
+
+.table{
+  margin-bottom: 3em;
+  width: 100%;
+  border-collapse: collapse;
+  transition: box-shadow 0.3s;
+}
+.table:nth-last-child(1){
+  margin-bottom: unset;
+}
+
+.table .center{
+  text-align: center;
+}
+.table tr td{
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s, color 0.3s;
+}
+/* skill-1 有六欄 */
+.table.skill-1 tr th:nth-child(1){
+  width: 15%;
+}
+.table.skill-1 tr th:nth-child(2){
+  width: 30%;
+}
+.table.skill-1 tr th:nth-child(3){
+  width: 12%;
+}
+.table.skill-1 tr th:nth-child(4){
+  width: 12%;
+}
+.table.skill-1 tr th:nth-child(5){
+  width: 12%;
+}
+.table.skill-1 tr th:nth-child(6){
+  width: auto;
+}
+
+/* skill-5 有四欄 */
+.table.skill-5 tr th:nth-child(1){
+  width: 15%;
+}
+.table.skill-5 tr th:nth-child(2){
+  width: 28%;
+}
+.table.skill-5 tr th:nth-child(3){
+  width: 28%;
+}
+.table.skill-5 tr th:nth-child(4){
+  width: auto;
+}
+/* .table tr th:nth-child(7){
+  width: auto;
+} */
+
+/* card-1 有四欄 */
+.table.card-1 tr th:nth-child(1){
+  width: 15%;
+}
+.table.card-1 tr th:nth-child(2){
+  width: 28%;
+}
+.table.card-1 tr th:nth-child(3){
+  width: 28%;
+}
+.table.card-1 tr th:nth-child(4){
+  width: auto;
+}
+
+.table tr:hover td{
+  color: white;
+  background-color: #008bd0;
+}
+.table tr:nth-child(odd){
+  background-color: rgba(0,0,0,0.025);
+}
+.table tr:nth-child(2) td:nth-child(1){
+  background-color: unset;
+  /* color: inherit; */
+}
+.table tr:nth-last-child(1) td{
+  border-bottom: 1px solid #ccc;
+}
+.table tr td, .table tr th{
+  padding: 0.5em;
+}
+.table tr th{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+  background-color: #008bd0;
+}
+.table tr th:nth-child(1),
+.table tr td.big{
+  text-align: center;
+}
+.table tr td.big{
+  font-size: 4em;
+  padding: unset;
+  font-weight: bold;
+  color: #008bd0;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+/*
+ * ---------------------------------------------------------------
+ * 技能選單
+ * ---------------------------------------------------------------
+*/
+
+ul.skill-menu{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #00273a;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 -5px 5px rgba(0,0,0,0.25) inset;
+}
+ul.skill-menu > li{
+  width: 100%;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+ul.skill-menu > li:nth-last-child(1){
+  border-right: unset;
+}
+ul.skill-menu.number-5 > li{
+  width: 20%;
+}
+ul.skill-menu.number-4 > li{
+  width: 25%;
+}
+ul.skill-menu.number-3 > li{
+  width: 33.3333333%;
+}
+ul.skill-menu.number-2 > li{
+  width: 50%;
+}
+ul.skill-menu > li > a{
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+ul.skill-menu > li > a.focus{
+  background-color: #008bd0;
+}
+
+
+/*
+ * ---------------------------------------------------------------
+ * 天外寶典頁籤的效果
+ * ---------------------------------------------------------------
+*/
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+  /* margin: 2em auto;
+  max-width: 300px; */
+  padding-top: 1em;
+  width: 100%;
+  background-color: #00273a;
+}
+.tabs input[type=radio] {
+  display: none;
+}
+.tabs input[type=radio]:checked + label {
+  color: #008bd0;
+  background-color: white;
+  transform: translatey(1px);
+  box-shadow: unset;
+}
+.tabs input[type=radio]:checked + label + .tab-content {
+  display: block;
+}
+.tabs label {
+  display: flex;
+  align-items: center;
+  padding: 0.65em;
+  /* min-height: 3em; */
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #005179;
+  border-bottom: unset;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #003955;
+  cursor: pointer;
+  transition: color 0.3s;
+  order: 0;
+}
+.tabs label:hover {
+  color: #008bd0;
+}
+.tabs .tab-content {
+  display: none;
+  padding: 3em;
+  width: 100%;
+  /* border: 1px solid #ccc;
+  border-radius: 5px; */
+  background-color: white;
+  order: 1;
+}

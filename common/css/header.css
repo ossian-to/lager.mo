@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+*, html {
+  font-family: "Microsoft JhengHei";
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  min-width: 1280px;
+  padding-left: 30px;
+  background: #182426;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-box, .right-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 110px;
+  height: 69px;
+  background: url("../images/logo.png") no-repeat;
+}
+
+#menu-btn {
+  display: flex;
+}
+#menu-btn li {
+  width: 130px;
+  height: 100px;
+}
+#menu-btn li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+#menu-btn li a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -35px;
+  margin-left: -35px;
+  width: 71px;
+  height: 69px;
+  background: url("../images/menu-btn-bg.png") no-repeat;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -moz-transform: scale(0) rotate(0deg);
+  -ms-transform: scale(0) rotate(0deg);
+  -webkit-transform: scale(0) rotate(0deg);
+  transform: scale(0) rotate(0deg);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+#menu-btn li a:hover .menu-btn-title {
+  color: #8addff;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#menu-btn li a:hover::before {
+  -moz-transform: scale(1) rotate(180deg);
+  -ms-transform: scale(1) rotate(180deg);
+  -webkit-transform: scale(1) rotate(180deg);
+  transform: scale(1) rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+.menu-btn-wordbox {
+  text-align: center;
+  top: 5px;
+}
+
+.menu-btn-title {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Noto Sans TC";
+  font-weight: bold;
+  text-shadow: 0 2px 2px #000;
+}
+
+.menu-btn-subtitle {
+  font-family: "Noto Sans TC";
+  font-size: 12px;
+  color: #9f9f9f;
+}
+
+.menu-shop-btn {
+  width: 181px;
+  height: 100px;
+  background: url("../images/menu-shop-btn.jpg") no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 82px;
+  -moz-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.menu-shop-btn:hover {
+  background: url("../images/menu-shop-btn-ac.jpg") no-repeat;
+}
+.menu-shop-btn:hover .menu-btn-subtitle {
+  color: #623b1e;
+}
+.menu-shop-btn .menu-btn-subtitle {
+  color: #fff;
+}
+
+.social-btn {
+  float: right;
+  display: flex;
+}
+.social-btn li {
+  width: 85px;
+  height: 100px;
+}
+.social-btn li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.social-btn li a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+.social-btn1 {
+  background: url("../images/socail-btn1.png") no-repeat center;
+}
+
+.social-btn2 {
+  background: url("../images/socail-btn2.png") no-repeat center;
+}

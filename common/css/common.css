@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html * {
+  font-family: "Microsoft JhengHei";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  background-color: #272727;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  min-width: 1280px;
+}
+
+.inner {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.title-box {
+  width: 307px;
+  height: 104px;
+  background: url("../images/title-bg.png") no-repeat center;
+  text-align: center;
+  padding-top: 33px;
+  font-family: "Noto Sans TC";
+  font-weight: bold;
+  color: #2a2a2a;
+  font-size: 40px;
+  margin: 0 auto 30px auto;
+}
+
+.news-box {
+  width: 500px;
+  padding: 30px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.news-wrap > a {
+  display: block;
+  color: #fff;
+  border-bottom: 1px solid #a7a7a7;
+  display: flex;
+  padding: 8px 0;
+  font-family: "Noto Sans TC";
+}
+.news-wrap > a:last-child {
+  border-bottom: 1px solid transparent;
+}
+.news-wrap .news-date {
+  width: 90px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.news-wrap .news-title {
+  width: 310px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news-type {
+  display: block;
+  width: 40px;
+  height: 20px;
+  margin-right: 18px;
+  line-height: 20px;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.news-type1 {
+  background: #ff0000;
+}
+
+.news-type2 {
+  background: #ff5527;
+}
+
+.news-type3 {
+  background: #4863b1;
+}
+
+.news-type4 {
+  background: #f5a500;
+}
+
+.h2 {
+  font-family: "Noto Sans TC";
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+.h2 .h2-en {
+  font-size: 10px;
+  color: #9f9f9f;
+}

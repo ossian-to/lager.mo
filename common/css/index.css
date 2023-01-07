@@ -1,0 +1,443 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+.index-container {
+  height: 853px;
+  background: url("../../index/index/images/index-bg.jpg") no-repeat top center;
+}
+
+.right-btn {
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  width: 100px;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 0 15px #fff;
+}
+.right-btn a {
+  margin: 11px auto;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.right-btn1 {
+  width: 55px;
+  height: 66px;
+  display: block;
+  background: url("../../index/index/images/right-btn1.png") no-repeat center;
+}
+.right-btn1:hover {
+  background: url("../../index/index/images/right-btn1-ac.png") no-repeat center;
+}
+
+.right-btn2 {
+  width: 55px;
+  height: 66px;
+  display: block;
+  background: url("../../index/index/images/right-btn2.png") no-repeat center;
+}
+.right-btn2:hover {
+  background: url("../../index/index/images/right-btn2-ac.png") no-repeat center;
+}
+
+.right-btn3 {
+  width: 57px;
+  height: 67px;
+  display: block;
+  background: url("../../index/index/images/right-btn3.png") no-repeat center;
+}
+.right-btn3:hover {
+  background: url("../../index/index/images/right-btn3-ac.png") no-repeat center;
+}
+
+.right-btn4 {
+  width: 69px;
+  height: 68px;
+  display: block;
+  background: url("../../index/index/images/right-btn4.png") no-repeat center;
+}
+.right-btn4:hover {
+  background: url("../../index/index/images/right-btn4-ac.png") no-repeat center;
+}
+
+.main-cont {
+  width: 1215px;
+  height: 233px;
+  display: flex;
+  margin: 0 auto;
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.8);
+  top: 580px;
+}
+.main-cont .news-box {
+  width: 518px;
+}
+
+.start-btn {
+  width: 269px;
+  height: 233px;
+  cursor: pointer;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.start-btn:hover .start-btn-bg {
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+}
+.start-btn:hover .start-btn-bg2 {
+  -moz-animation: start-btn-bg2-ani 4s linear infinite;
+  -webkit-animation: start-btn-bg2-ani 4s linear infinite;
+  animation: start-btn-bg2-ani 4s linear infinite;
+}
+.start-btn:hover .start-btn-bg3 {
+  -moz-animation: start-btn-bg3-ani 4s linear infinite;
+  -webkit-animation: start-btn-bg3-ani 4s linear infinite;
+  animation: start-btn-bg3-ani 4s linear infinite;
+}
+.start-btn:hover .start-btn-light {
+  -moz-animation: start-btn-light-ani 8s linear infinite;
+  -webkit-animation: start-btn-light-ani 8s linear infinite;
+  animation: start-btn-light-ani 8s linear infinite;
+}
+.start-btn:hover .start-btn-word {
+  -moz-animation: heartBeat 1.3s ease-in-out infinite;
+  -webkit-animation: heartBeat 1.3s ease-in-out infinite;
+  animation: heartBeat 1.3s ease-in-out infinite;
+}
+.start-btn:hover .start-btn-word2 {
+  -moz-animation: start-btn-word2-ani 1.3s ease-in-out infinite;
+  -webkit-animation: start-btn-word2-ani 1.3s ease-in-out infinite;
+  animation: start-btn-word2-ani 1.3s ease-in-out infinite;
+}
+
+.start-btn-bg {
+  width: 269px;
+  height: 233px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: url("../../index/index/images/start-btn-bg.png") no-repeat center;
+}
+
+.start-btn-bg2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -102px;
+  margin-left: -101px;
+  width: 203px;
+  height: 202px;
+  z-index: 1;
+  background: url("../../index/index/images/start-btn-bg2.png") no-repeat center;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.start-btn-bg3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -76px;
+  margin-left: -76px;
+  width: 152px;
+  height: 152px;
+  z-index: 2;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: url("../../index/index/images/start-btn-bg3.png") no-repeat center;
+}
+
+.start-btn-light {
+  position: absolute;
+  width: 269px;
+  height: 233px;
+  z-index: 5;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-image: url("../../index/index/images/start-btn-light.png");
+  background-position: top center;
+}
+
+.start-btn-word {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -62px;
+  margin-left: -121px;
+  width: 243px;
+  height: 123px;
+  z-index: 3;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: url("../../index/index/images/start-btn-word.png") no-repeat center;
+}
+
+.start-btn-word2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 243px;
+  height: 123px;
+  z-index: 4;
+  opacity: 0;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: url("../../index/index/images/start-btn-word-ac.png") no-repeat center;
+}
+
+.download-sec {
+  width: 428px;
+  height: 233px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+}
+.download-sec:before {
+  width: 1px;
+  height: 188px;
+  background: #787878;
+  position: absolute;
+  content: "";
+  top: 50%;
+  margin-top: -94px;
+  left: 0;
+}
+
+@-webkit-keyframes start-btn-bg2-ani {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes start-btn-bg2-ani {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes start-btn-bg2-ani {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes start-btn-bg2-ani {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes start-btn-bg3-ani {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@-moz-keyframes start-btn-bg3-ani {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@-o-keyframes start-btn-bg3-ani {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(-360deg);
+  }
+}
+@keyframes start-btn-bg3-ani {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes start-btn-light-ani {
+  from {
+    -webkit-background-position: top center;
+  }
+  to {
+    -webkit-background-position: bottom center;
+  }
+}
+@-moz-keyframes start-btn-light-ani {
+  from {
+    -moz-background-position: top center;
+  }
+  to {
+    -moz-background-position: bottom center;
+  }
+}
+@-o-keyframes start-btn-light-ani {
+  from {
+    -o-background-position: top center;
+  }
+  to {
+    -o-background-position: bottom center;
+  }
+}
+@keyframes start-btn-light-ani {
+  from {
+    background-position: top center;
+  }
+  to {
+    background-position: bottom center;
+  }
+}
+@keyframes start-btn-word2-ani {
+  0% {
+    opacity: 0;
+  }
+  14% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 0;
+  }
+  42% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+}
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  14% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  42% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.game-download-btn {
+  display: flex;
+  margin-top: 12px;
+}
+.game-download-btn a {
+  display: block;
+  width: 112px;
+  height: 129px;
+  background: #454545;
+  margin-right: 15px;
+  padding-top: 22px;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.game-download-btn a:last-child {
+  margin-right: 0;
+}
+.game-download-btn a:hover {
+  background: #3a5e6c;
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+}
+.game-download-btn .icon {
+  width: 100%;
+  text-align: center;
+  height: 44px;
+  margin: 0 auto;
+}
+.game-download-btn .word {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 5px;
+  font-family: "Noto Sans TC";
+  font-weight: bold;
+  text-align: center;
+}
+.game-download-btn .subword {
+  font-size: 12px;
+  color: #e6e6e6;
+}
+
+.method-btn,
+.more-btn {
+  position: absolute;
+  top: 35px;
+  right: 30px;
+  color: #cfcfcf;
+  font-family: "Noto Sans TC";
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.method-btn:hover,
+.more-btn:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+
+.maintain-time-box {
+  position: fixed;
+  left: 10px;
+  top: 350px;
+  width: 203px;
+  height: 125px;
+  background: url("../../index/index/images/maintain-time-bg.gif") no-repeat center;
+}
+
+.meaintain-time-word {
+  font-family: "Noto Sans TC";
+  font-weight: bold;
+  color: #522218;
+  top: 65px;
+  left: 87px;
+}
