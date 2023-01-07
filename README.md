@@ -13,7 +13,7 @@
 
 ## GIT
 
-- 2023/01/07 專案上 Github
+- 2023/01/07 專案上 [Github](https://github.com/ossian-to/lager.mo.git)
 
 
 
